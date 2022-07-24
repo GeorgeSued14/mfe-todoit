@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  root:
+    build: 
+      context: './root'
+      dockerfile: Dockerfile
+    volumes:
+      - ./root:/src/
+      - node_modules:/src/node_modules
+    ports:
+      - 9000:9000
+    command: yarn start
+
+  menu:
+    build: 
+      context: './menu'
+      dockerfile: Dockerfile
+    volumes:
+      - ./menu:/src/
+      - node_modules:/src/node_modules
+    ports:
+      - 9001:9001
+    command: yarn start
+
+  home:
+    build: 
+      context: './home'
+      dockerfile: Dockerfile
+    volumes:
+      - ./home:/src/
+      - node_modules:/src/node_modules
+    ports:
+      - 9002:9002
+    command: yarn start
+
+volumes:
+  node_modules: {}
