@@ -1,3 +1,15 @@
+<<<<<<< HEAD
 [submodule "home"]
 	path = home
 	url = git@github.com:GeorgeSued14/mfe-todoit.git
+=======
+[submodule "home2"]
+	path = home2
+	url = git@github.com:GeorgeSued14/mfe-todoit.git
+[submodule "home"]
+	path = home
+	url = git@github.com:GeorgeSued14/mfe-todoit.git
+[submodule "menu"]
+	path = menu
+	url = git@github.com:GeorgeSued14/mfe-todoit.git
+>>>>>>> 53e29d0647db7cfdfcbea84be6e935f0c81faffc
